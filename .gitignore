@@ -1,0 +1,6 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.directory
+.SPE.ico
