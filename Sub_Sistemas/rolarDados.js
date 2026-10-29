@@ -27,7 +27,7 @@ class rolarDados{
 
     const gruposOrdenados = Object.entries(dadosAgrupados).sort((a, b) => Number(b[0]) - Number(a[0])); // Ordena os dados pelas maiores faces para as menores
 
-    const totalDados = gruposOrdenados.reduce((total, [faces, quantidades]) => { total + quantidades, 0 }); //Verifica se obedece o limite de 20 dados
+    const totalDados = gruposOrdenados.reduce((total, [faces, quantidades]) => total + quantidades, 0 ); //Verifica se obedece o limite de 20 dados
     if (totalDados > 20) { throw new Error("Você pode rolar no máximo 20 dados.\nPare de trapacear"); }
 
     const detalhes = [];
